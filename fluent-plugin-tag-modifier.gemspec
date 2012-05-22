@@ -1,5 +1,5 @@
 # -*- encoding: utf-8 -*-
-require File.expand_path('../lib/fluent-plugin-tag-modifier/version', __FILE__)
+#require File.expand_path('../lib/fluent-plugin-tag-modifier/version', __FILE__)
 
 Gem::Specification.new do |gem|
   gem.authors       = ["Shinji Tanaka"]
@@ -14,4 +14,8 @@ Gem::Specification.new do |gem|
   gem.name          = "fluent-plugin-tag-modifier"
   gem.require_paths = ["lib"]
   gem.version       = "0.0.1"
+
+  gem.rubyforge_project = "fluent-plugin-tag-modifier"
+  gem.add_development_dependency "fluentd"
+  gem.add_runtime_dependency "fluentd"
 end
